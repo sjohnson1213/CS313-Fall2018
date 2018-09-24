@@ -1,0 +1,22 @@
+div:hover {font-weight: bold;}
+
+#div1{
+	font-size: 24px;
+	background-color: yellow;
+	width: 200px;
+	height: 100px;
+}
+
+#div2{
+	font-size: 40px;
+	background-color: pink;	
+	width: 200px;
+	height: 100px;
+}
+
+#div3{
+	font-size: 20px;
+	background-color: red;	
+	width: 200px;
+	height: 100px;
+}
