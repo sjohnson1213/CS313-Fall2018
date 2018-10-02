@@ -23,8 +23,18 @@ body{
     background-size: 200px 200px;
     transition-property: background-image;
     transition-duration: 3s;
+    float: left;
 }
 
 #growing:hover {
     background-image: url("images/seedling.png");
+}
+
+#fun-facts{
+    margin: auto;
+    width: 86%;
+    float: right;
+    color: white;
+    font-size: 24px;
+    text-align: center;
 }
