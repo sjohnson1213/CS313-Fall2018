@@ -1,0 +1,30 @@
+body{
+    background-image: url("images/dirt.jpg");
+}
+
+#assignments-link{
+    width:200px;
+    height:35px;
+    background-color:#7CFC00;
+    font-size:22px;
+}
+
+#title{
+    margin: auto;
+    width: 20%;
+    font-size: 40px;
+    color: #228B22;
+}
+
+#growing {
+    width: 200px;
+    height: 200px;
+    background-image: url("images/seed.png");
+    background-size: 200px 200px;
+    transition-property: background-image;
+    transition-duration: 3s;
+}
+
+#growing:hover {
+    background-image: url("images/seedling.png");
+}
