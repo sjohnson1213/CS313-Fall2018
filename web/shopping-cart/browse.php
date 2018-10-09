@@ -13,7 +13,7 @@ $amounts = array("23.99", "19.99", "69.99", "16.99", "15.99", "25.99");
     <th>Add to Cart?</th>
     </tr>
 <?php
-for ($i=0; $i<$count(products); $i++){
+for ($i=0; $i<count($products); $i++){
     ?>
     <tr>
     <td><?php echo($products[$i]);?><br><?php echo($images[$i]); ?></td>
