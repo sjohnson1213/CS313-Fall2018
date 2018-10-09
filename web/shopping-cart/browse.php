@@ -25,7 +25,7 @@ if ( !isset($_SESSION["total"]) ) {
 ?>
 
 <a href="view-cart.php">
-<img src="cart.png" alt="view cart" height="50" width="50" >
+<img src="images/cart.png" alt="view cart" height="50" width="50" >
 </a>
 
 <div class="center">
