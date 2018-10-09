@@ -7,7 +7,6 @@ echo "<link rel='stylesheet' type='text/css' href='mainstyle.css' />";
 $sets= $_POST["sets"];
 
 foreach($sets as $set) {
-    echo $set;
-    break;
+    echo "$set<br>";
 }
 ?>
