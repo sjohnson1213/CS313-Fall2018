@@ -2,6 +2,10 @@
 echo "<link rel='stylesheet' type='text/css' href='mainstyle.css' />";
 ?>
 <html> 
+<head>
+<link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
+</head>
+
 <body>
     <div class="center">
     <h1 id="checkout">Checkout</h1>
