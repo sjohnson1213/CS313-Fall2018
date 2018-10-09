@@ -1,7 +1,7 @@
 <?php
-$products = $_POST["products"];
+$products = $_POST["sets"];
 
-foreach ($products as $product) {
-    echo $product;
+foreach ($sets as $set) {
+    echo $set;
 }
 ?>
