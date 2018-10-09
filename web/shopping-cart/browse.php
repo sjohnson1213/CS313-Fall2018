@@ -6,6 +6,14 @@ $products = array("Hulkbuster", "Thor's Weapon Quest", "Ultimate Battle", "Ant-M
 $amounts = array("23.99", "19.99", "69.99", "16.99", "15.99", "25.99");
 echo "<link rel='stylesheet' type='text/css' href='mainstyle.css' />";
  
+if ( !isset($_SESSION["total"]) ) {
+    $_SESSION["total"] = 0;
+    for ($i=0; $i< count($products); $i++) {
+     $_SESSION["quantity"][$i] = 0;
+    $_SESSION["amounts"][$i] = 0;
+   }
+  }
+
  if ( isset($_GET["add"]) )
    {
    $i = $_GET["add"];
