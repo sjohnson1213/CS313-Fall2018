@@ -2,3 +2,14 @@ img {
     width: 100px;
     height: 100px;
 }
+
+form {
+    overflow: hidden;
+	width: 500px;
+  }
+  
+  input {
+    float: right;
+    clear: both;
+	width: 200px;
+  }
