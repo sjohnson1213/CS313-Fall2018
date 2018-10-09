@@ -10,3 +10,4 @@ foreach($sets as $set) {
     echo $set;
     <br>
 }
+?>
