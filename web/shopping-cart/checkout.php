@@ -5,6 +5,7 @@ echo "<link rel='stylesheet' type='text/css' href='mainstyle.css' />";
 <head>
 <link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
 <style> 
+
 </style>
 </head>
 <body>
