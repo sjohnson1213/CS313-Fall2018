@@ -22,7 +22,7 @@ for ($i=0; $i<count($products); $i++){
     <tr>
     <td><?php echo($products[$i]);?><br><?php echo '<img src="'.($images[$i]).'">';?></td>
     <td><?php echo($amounts[$i]);?></td>
-    <td><input type="checkbox" name="sets[]" value="<?php echo($products[$i]);?>"></td>
+    <td><input type="checkbox" name="sets[]" value=<?php echo($products[$i]);?>></td>
     </tr>
     <?php
 }
@@ -30,5 +30,7 @@ for ($i=0; $i<count($products); $i++){
 </table>
     <input type="submit" value="Add To Cart">
 </form>
+
+
 </div>
     
