@@ -9,7 +9,7 @@ echo "<link rel='stylesheet' type='text/css' href='mainstyle.css' />";
     </head>
     <body>
 <a href="view-cart.php">
-<img src="images/cart.png" alt="view cart" height="50" width="50" float="right">
+<img src="images/cart.png" alt="view cart" height="30" width="30" style="float: right">
 </a>
 
 <div class="center">

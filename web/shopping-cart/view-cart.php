@@ -3,7 +3,7 @@ session_start();
 echo "<link rel='stylesheet' type='text/css' href='mainstyle.css' />";
 
 if (!isset($_SESSION["cart"])) {
-    $_SESSION["cart"] = 0;
+    $_SESSION["cart"] = NULL;
 }
 
 foreach ($sets as $set) {
