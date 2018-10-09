@@ -41,17 +41,36 @@ if ( !isset($_SESSION["total"]) ) {
     <th>Amount</th>
     <th>Add to Cart?</th>
     </tr>
-<?php
-for ($i=0; $i<count($products); $i++){
-    ?>
     <tr>
-    <td><?php echo($products[$i]);?><br><?php echo '<img src="'.($images[$i]).'">';?></td>
-    <td><?php echo($amounts[$i]);?></td>
-    <td><input type="checkbox" name="sets[]" value="<?php echo "'.($products[i]).'";?>"></td>
+        <td>Hulkbuster<br><img src="images/hulkbuster.jpeg"></td>
+        <td>23.99</td>
+        <td><input type="checkbox" name="sets[]" value="hulk">
     </tr>
-    <?php
-}
-?>
+    <tr>
+        <td>Thor's Weapon Quest<br><img src="images/quest.jpeg"></td>
+        <td>19.99</td>
+        <td><input type="checkbox" name="sets[]" value="thor">
+    </tr>
+    <tr>
+        <td>Ultimate Battle<br><img src="images/ultimate-battle.jpeg"></td>
+        <td>69.99</td>
+        <td><input type="checkbox" name="sets[]" value="battle">
+    </tr>
+    <tr>
+        <td>Ant-Man and the Wasp<br><img src="images/antman-wasp.jpeg"></td>
+        <td>16.99</td>
+        <td><input type="checkbox" name="sets[]" value="antman">
+    </tr>
+    <tr>
+        <td>Black Panther VS Rhino<br><img src="images/black-panther.jpeg"></td>
+        <td>15.99</td>
+        <td><input type="checkbox" name="sets[]" value="panther">
+    </tr>
+    <tr>
+        <td>Beware the Vulture<br><img src="images/beware.jpeg"></td>
+        <td>25.99</td>
+        <td><input type="checkbox" name="sets[]" value="vulture">
+    </tr>
 </table>
 <input type="submit" value="Add To Cart">
 </form>
