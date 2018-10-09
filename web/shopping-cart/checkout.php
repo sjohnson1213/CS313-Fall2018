@@ -10,7 +10,7 @@ echo "<link rel='stylesheet' type='text/css' href='mainstyle.css' />";
 <body>
     <div class="center">
     <h1 id="checkout">Checkout</h1>
-    <form action="confirmation.php" method="post">
+    <form action="confirmation.php" method="get">
         Name: <input type="text" name="name"><br><br>
         Street Address: <input type="text" name="street"><br><br>
         City: <input type="text" name="city"><br><br>
