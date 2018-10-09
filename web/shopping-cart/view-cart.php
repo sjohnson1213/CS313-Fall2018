@@ -8,6 +8,6 @@ $sets= $_POST["sets"];
 
 foreach($sets as $set) {
     echo $set;
-    <br>
+    break;
 }
 ?>
