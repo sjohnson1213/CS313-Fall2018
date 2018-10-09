@@ -3,6 +3,7 @@
 $images = array("images/hulkbuster.jpeg", "images/quest.jpeg", "images/ultimate-battle.jpeg", "images/antman-wasp.jpeg", "images/black-panther.jpeg", "images/beware.jpeg");
 $products = array("Hulkbuster", "Thor's Weapon Quest", "Ultimate Battle", "Ant-Man and the Wasp", "Black Panther/Rhino", "Beware the Vulture");
 $amounts = array("23.99", "19.99", "69.99", "16.99", "15.99", "25.99");
+echo "<link rel='stylesheet' type='text/css' href='mainstyle.css' />";
 ?>
 
 <h1>Lego Sets</h1>
