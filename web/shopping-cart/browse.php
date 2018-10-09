@@ -23,13 +23,18 @@ if ( !isset($_SESSION["total"]) ) {
    $_SESSION["quantity"][$i] = $quantity;
  }
 ?>
-
+<html>
+    <head>
+        <title>Product Page</title>
+    </head>
+    <body>
 <a href="view-cart.php">
-<img src="images/cart.png" alt="view cart" height="50" width="50" >
+<img src="images/cart.png" alt="view cart" height="50" width="50" float="right">
 </a>
 
 <div class="center">
-<h1>Lego Sets</h1>
+<h1 class="heading">Lego Sets</h1>
+<form action="view-cart.php" method="post">
 <table>
     <tr>
     <th>Product</th>
@@ -42,11 +47,15 @@ for ($i=0; $i<count($products); $i++){
     <tr>
     <td><?php echo($products[$i]);?><br><?php echo '<img src="'.($images[$i]).'">';?></td>
     <td><?php echo($amounts[$i]);?></td>
-    <td><a href="?add=<?php echo($i); ?>">Add</a></td>
+    <td><input type="checkbox" name="sets[]" value=".($products[i])."></td>
     </tr>
     <?php
 }
 ?>
 </table>
+<input type="submit" value="Add To Cart">
+</form>
 </div>
+</body>
+</html>
     

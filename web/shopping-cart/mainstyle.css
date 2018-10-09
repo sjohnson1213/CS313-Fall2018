@@ -19,7 +19,7 @@ form {
     margin: auto;
   }
 
-  #checkout{
+  .heading{
       text-align: center;
       font-family: 'Fahkwang', sans-serif;
       font-size: 48px;
