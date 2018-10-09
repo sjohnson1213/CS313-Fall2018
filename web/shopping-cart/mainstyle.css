@@ -32,3 +32,7 @@ form {
   .button{
       background-color: #FFD23F;
   }
+
+  td{
+    border: 1px solid #540D6E;
+  }
