@@ -13,3 +13,8 @@ form {
     clear: both;
 	width: 200px;
   }
+
+  .center{
+    margin: auto;
+    width: 50%;
+  }
