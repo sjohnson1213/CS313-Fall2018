@@ -3,10 +3,8 @@ echo "<link rel='stylesheet' type='text/css' href='mainstyle.css' />";
 ?>
 <html> 
 <head>
+<title>Checkout</title>
 <link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
-<style> 
-
-</style>
 </head>
 <body>
     <div class="center">

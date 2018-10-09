@@ -1,3 +1,7 @@
+body{
+    background-color: #F3FCF0;
+    color: #1F271B;
+}
 img {
     width: 100px;
     height: 100px;
@@ -23,4 +27,8 @@ form {
       text-align: center;
       font-family: 'Fahkwang', sans-serif;
       font-size: 48px;
+  }
+
+  button{
+      background-color: #FFD23F;
   }

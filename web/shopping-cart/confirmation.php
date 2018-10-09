@@ -3,6 +3,9 @@ echo "<link rel='stylesheet' type='text/css' href='mainstyle.css' />";
 ?>
 
 <html>
+    <head>
+        <title>Order Confirmation</title>
+</head>
 <body>
 <div class="center"  style="text-align:center">
 <h1>Thank you for your purchase <?php echo $_GET["name"]; ?>!</h1><br><br>
