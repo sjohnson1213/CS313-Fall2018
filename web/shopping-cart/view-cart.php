@@ -18,7 +18,7 @@ echo "<link rel='stylesheet' type='text/css' href='mainstyle.css' />";
         <title>Cart</title>
     </head>
     <body>
-    <button type="button" value="Empty Cart" onclick="session_unset();">
+    <button type="button" value="Empty Cart" onclick="session_unset();">Empty Cart</button>
         <div class="center">
             <h1 class="heading">Your Cart</h1>
             <?php
