@@ -26,8 +26,8 @@ echo "<link rel='stylesheet' type='text/css' href='mainstyle.css' />";
                 echo "$item<br>";
             ?>
             <br>
-            <input type="button" value="Back to Browse" onclick="window.location.href='browse.php'" class="button" style="float: right"/>
-            <input type="button" value="Continue to Checkout" onclick="window.location.href='checkout.php'" class="button"/>   
+            <input type="button" id="back" value="Back to Browse" onclick="window.location.href='browse.php'" class="button"/>
+            <input type="button" id="continue" value="Continue to Checkout" onclick="window.location.href='checkout.php'" class="button"/>   
         </div>
     </body>
 </html>

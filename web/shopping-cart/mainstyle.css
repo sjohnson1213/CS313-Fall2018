@@ -36,3 +36,11 @@ form {
   td{
     border: 1px solid #540D6E;
   }
+
+  #back{
+      float: left;
+  }
+
+  #continue{
+      float: right;
+  }
