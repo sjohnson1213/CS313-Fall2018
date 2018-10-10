@@ -10,12 +10,12 @@ echo "<link rel='stylesheet' type='text/css' href='mainstyle.css' />";
 <body>
 <div class="center"  style="text-align:center">
 <h1>Thank you for your purchase <?php echo $_GET["name"]; ?>!</h1><br><br>
-<h2>You have purchased: </h2><br><br>
+<h2>You have purchased: </h2>
 <?php
     $items = $_SESSION["cart"];
     foreach($items as $item)
     echo "$item<br>";
-?>
+?><br><br>
 <h3>Your items will be sent to the following address:<br>
 <?php echo $_GET["street"]; ?><br>
 <?php echo $_GET["city"]; ?>, 

@@ -18,6 +18,7 @@ echo "<link rel='stylesheet' type='text/css' href='mainstyle.css' />";
         <title>Cart</title>
     </head>
     <body>
+    <button type="button" value="Empty Cart" onclick="session_unset();">
         <div class="center">
             <h1 class="heading">Your Cart</h1>
             <?php
