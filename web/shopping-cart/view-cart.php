@@ -1,14 +1,16 @@
 <?php
 session_start(); 
-echo "<link rel='stylesheet' type='text/css' href='mainstyle.css' />";
+$sets = $_POST["sets"];
 
 if (!isset($_SESSION["cart"])) {
-    $_SESSION["cart"] = NULL;
+    $_SESSION["cart"] = array();
 }
 
 foreach ($sets as $set) {
-    $_SESSION["cart"]
+    $_SESSION["cart"][] = $set;
 }
+
+echo "<link rel='stylesheet' type='text/css' href='mainstyle.css' />";
 ?>
 
 <html>
