@@ -28,6 +28,6 @@ catch (PDOException $ex)
         <link rel="stylesheet" type="text/css" href="mainstyle.css">
     </head>
     <body>
-        <h1>Your Budget</h1>
+        <h1 class="page_header">Your Budget</h1>
     </body>
 </html>
