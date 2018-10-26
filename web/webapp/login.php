@@ -12,7 +12,7 @@ session_start();
         <h1 class="page_header">Register or Login</h1>
 
         <form action="main.php">
-            <div class="container">
+            <div class="center">
                 <label for="username"><b>Username</b></label>
                 <input type="text" placeholder="Enter Username" name="username" required><br><br>
 

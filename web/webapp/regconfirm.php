@@ -21,3 +21,17 @@ catch (PDOException $ex)
   die();
 }
 ?>
+
+<html>
+    <head>
+        <title>Project 1: Budget Application</title>
+        <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    </head>
+    <body>
+        <div class="center">
+        <h1 class="page_header">Congratulations! You're now registered!</h1>
+
+        <p>You're login information is:</p>
+        </div>
+    </body>
+</html>
