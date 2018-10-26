@@ -9,10 +9,10 @@ session_start();
     </head>
     <body>
         <button type="button" onclick="window.location.href='register.php'">Register</button>
-        <h1 class="page_header">Register or Login</h1>
+        <div class="center">
+            <h1 class="page_header">Register or Login</h1>
 
-        <form action="main.php">
-            <div class="center">
+            <form action="main.php">
                 <label for="username"><b>Username</b></label>
                 <input type="text" placeholder="Enter Username" name="username" required><br><br>
 
@@ -20,7 +20,7 @@ session_start();
                 <input type="password" placeholder="Enter Password" name="password" required><br><br>
 
                 <button type="submit">Login</button>
-            </div>
-        </form>
+            </form>
+        </div>    
     </body>
 </html>
