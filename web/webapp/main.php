@@ -28,6 +28,7 @@ catch (PDOException $ex)
         <link rel="stylesheet" type="text/css" href="mainstyle.css">
     </head>
     <body>
+        <button type="button" onclick="window.location.href='transactions.php'" id="tran_button">Go to Transactions</button>
         <div class="center">
             <h1 class="page_header">Your Budget</h1>
         </div>
