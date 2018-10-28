@@ -8,7 +8,7 @@ session_start();
         <link rel="stylesheet" type="text/css" href="mainstyle.css">
     </head>
     <body>
-        <button type="button" onclick="window.location.href='register.php'">Register</button>
+        <button type="button" onclick="window.location.href='register.php'" id="reg_button">Register</button>
         <div class="center">
             <h1 class="page_header">Register or Login</h1>
 
