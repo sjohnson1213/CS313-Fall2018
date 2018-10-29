@@ -8,10 +8,9 @@ session_start();
         <link rel="stylesheet" type="text/css" href="mainstyle.css">
     </head>
     <body>
-    <h1 class="page_header">Let's Get You Registered!</h1>
-
     <form action="main.php">
         <div class="center">
+            <h1 class="page_header">Let's Get You Registered!</h1>
             <label for="username"><b>Username</b></label>
             <input type="text" placeholder="Enter Username" name="username" required><br><br>
 
