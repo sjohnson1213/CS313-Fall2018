@@ -10,6 +10,8 @@ body{
 .center{
     max-width: 600px;
     margin: auto;
+    align-content: center;
+    text-align: center;
 }
 
 #reg_button{
