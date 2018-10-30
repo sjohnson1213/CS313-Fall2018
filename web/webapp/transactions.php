@@ -1,4 +1,14 @@
 <?php
+session_start();
+if (isset($_SESSION['username']) && isset($_SESSION['password'])){
+    $_SESSION['username'] = $_POST['username'];
+    $_SESSION['password'] = $_POST['password'];
+}
+
+$username = $_SESSION['username'];
+$password = $_SESSION['password'];
+$id = 0;
+
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -19,6 +29,11 @@ catch (PDOException $ex)
 {
   echo 'Error!: ' . $ex->getMessage();
   die();
+}
+
+foreach ($db->query("SELECT id FROM budget_user WHERE username='$username' AND password='$password'") as $row)
+{
+    $id=$row['id'];
 }
 ?>
 
