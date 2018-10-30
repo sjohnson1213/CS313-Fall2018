@@ -42,7 +42,7 @@ catch (PDOException $ex)
         <div class="center">
             <h2>Hello, </h2>
             <?php
-            foreach ($db->query("SELECT name FROM budget_user WHERE username='$username' AND password='$password'") as $row)
+            foreach ($db->query("SELECT username FROM budget_user WHERE username='$username' AND password='$password'") as $row)
             {
                 echo $row['username'];
             }
