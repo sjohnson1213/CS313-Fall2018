@@ -9,6 +9,8 @@ $username = $_SESSION['username'];
 $password = $_SESSION['password'];
 $id = 0;
 
+echo $_POST['username'];
+echo $_POST['password'];
 try
 {
   $dbUrl = getenv('DATABASE_URL');
