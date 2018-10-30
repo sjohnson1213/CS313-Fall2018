@@ -46,6 +46,12 @@ catch (PDOException $ex)
             {
                 echo $row['name'];
             }
+
+            foreach ($db->query("SELECT id FROM budget_user WHERE username='$username' AND password='$password'") as $row)
+            {
+                $id=$row['id'];
+            }
+
             ?>
             </div>
             <h1 class="page_header">Your Budget</h1><br>
@@ -58,7 +64,7 @@ catch (PDOException $ex)
             <tr>
                 <td>
                 <?php
-                foreach ($db->query("SELECT income FROM budget WHERE username='$username' AND password='$password'") as $row)
+                foreach ($db->query("SELECT income FROM budget WHERE id='$id'") as $row)
                 {
                     echo $row['income'];
                 }
@@ -66,7 +72,7 @@ catch (PDOException $ex)
                 </td>
                 <td>
                 <?php
-                foreach ($db->query("SELECT category FROM budget WHERE username='$username' AND password='$password'") as $row)
+                foreach ($db->query("SELECT category FROM budget WHERE id='$id'") as $row)
                 {
                     echo $row['category'];
                 }
@@ -74,7 +80,7 @@ catch (PDOException $ex)
                 </td> 
                 <td>
                 <?php
-                foreach ($db->query("SELECT expected_expenses FROM budget WHERE username='$username' AND password='$password'") as $row)
+                foreach ($db->query("SELECT expected_expenses FROM budget WHERE id='$id'") as $row)
                 {
                     echo $row['expected_expenses'];
                 }
