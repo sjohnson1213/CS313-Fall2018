@@ -32,32 +32,50 @@ catch (PDOException $ex)
             <h1 class="page_header">Your Transactions</h1>
             <table id="tran_table" style="width:100%">
             <tr>
-                <th>Income</th>
-                <th>Category</th> 
-                <th>Expected Expense</th>
+                <th>Category</th>
+                <th>Date</th>
+                <th>Amount</th> 
+                <th>Merchant</th>
+                <th>Note</th>
             </tr>
             <tr>
                 <td>
                 <?php
-                foreach ($db->query("SELECT income FROM budget WHERE id='$id'") as $row)
+                foreach ($db->query("SELECT category FROM transactions WHERE id='$id'") as $row)
                 {
-                    echo $row['income'];
+                    echo $row['category'];
                 }
                 ?>
                 </td>
                 <td>
                 <?php
-                foreach ($db->query("SELECT category FROM budget WHERE id='$id'") as $row)
+                foreach ($db->query("SELECT date FROM transactions WHERE id='$id'") as $row)
                 {
-                    echo $row['category'];
+                    echo $row['date'];
                 }
                 ?>
                 </td> 
                 <td>
                 <?php
-                foreach ($db->query("SELECT expected_expenses FROM budget WHERE id='$id'") as $row)
+                foreach ($db->query("SELECT amount FROM transactions WHERE id='$id'") as $row)
                 {
-                    echo $row['expected_expenses'];
+                    echo "$ " . $row['amount'];
+                }
+                ?>
+                </td>
+                <td>
+                <?php
+                foreach ($db->query("SELECT merchant FROM transactions WHERE id='$id'") as $row)
+                {
+                    echo $row['merchant'];
+                }
+                ?>
+                </td>
+                <td>
+                <?php
+                foreach ($db->query("SELECT note FROM transactions WHERE id='$id'") as $row)
+                {
+                    echo $row['note'];
                 }
                 ?>
                 </td>
