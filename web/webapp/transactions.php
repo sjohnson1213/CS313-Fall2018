@@ -30,6 +30,38 @@ catch (PDOException $ex)
     <body>
         <div class="center">
             <h1 class="page_header">Your Transactions</h1>
+            <table id="tran_table" style="width:100%">
+            <tr>
+                <th>Income</th>
+                <th>Category</th> 
+                <th>Expected Expense</th>
+            </tr>
+            <tr>
+                <td>
+                <?php
+                foreach ($db->query("SELECT income FROM budget WHERE id='$id'") as $row)
+                {
+                    echo $row['income'];
+                }
+                ?>
+                </td>
+                <td>
+                <?php
+                foreach ($db->query("SELECT category FROM budget WHERE id='$id'") as $row)
+                {
+                    echo $row['category'];
+                }
+                ?>
+                </td> 
+                <td>
+                <?php
+                foreach ($db->query("SELECT expected_expenses FROM budget WHERE id='$id'") as $row)
+                {
+                    echo $row['expected_expenses'];
+                }
+                ?>
+                </td>
+            </table>
         </div>
     </body>
 </html>

@@ -55,7 +55,7 @@ catch (PDOException $ex)
             ?>
             </div>
             <h1 class="page_header">Your Budget</h1><br>
-            <table style="width:100%">
+            <table id="budget_table" style="width:100%">
             <tr>
                 <th>Income</th>
                 <th>Category</th> 
