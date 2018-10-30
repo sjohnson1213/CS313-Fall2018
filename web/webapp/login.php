@@ -1,5 +1,13 @@
 <?php
 session_start();
+
+if (!isset($_SESSION['username'])) {
+    $_SESSION['username'] = "empty";
+}
+
+if (!isset($_SESSION['password'])) {
+    $_SESSION['password'] = "empty";
+}
 ?>
 
 <html>
