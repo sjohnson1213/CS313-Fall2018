@@ -44,7 +44,7 @@ catch (PDOException $ex)
             <?php
             foreach ($db->query("SELECT name FROM budget_user WHERE username='$username' AND password='$password'") as $row)
             {
-                echo $row['name'];
+                echo $row['username'];
             }
             ?>
             <h1 class="page_header">Your Budget</h1>
