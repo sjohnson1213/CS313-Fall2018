@@ -17,6 +17,12 @@ session_start();
             <label for="password"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="password" required><br><br>
 
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" required><br><br>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required><br><br>
+
             <button type="submit">Register</button>
         </div>
     </form>
