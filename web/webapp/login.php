@@ -20,7 +20,7 @@ if (!isset($_SESSION['password'])) {
         <div class="center">
             <h1 class="page_header">Register or Login</h1>
 
-            <form post="main.php">
+            <form action="main.php" method="POST">
                 <label for="username"><b>Username</b></label>
                 <input type="text" placeholder="Enter Username" name="username" required><br><br>
 
