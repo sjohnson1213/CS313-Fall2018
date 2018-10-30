@@ -9,8 +9,6 @@ $username = $_SESSION['username'];
 $password = $_SESSION['password'];
 $id = 0;
 
-echo $_POST['username'];
-echo $_POST['password'];
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -42,14 +40,16 @@ catch (PDOException $ex)
     <body>
         <button type="button" onclick="window.location.href='transactions.php'" id="tran_button">Go to Transactions</button>
         <div class="center">
-            <h2>Hello, </h2>
+            <div>Hello,
             <?php
-            foreach ($db->query("SELECT username FROM budget_user WHERE username='$username' AND password='$password'") as $row)
+            foreach ($db->query("SELECT name FROM budget_user WHERE username='$username' AND password='$password'") as $row)
             {
-                echo $row['username'];
+                echo $row['name'];
             }
             ?>
+            </div>
             <h1 class="page_header">Your Budget</h1>
+
         </div>
     </body>
 </html>
