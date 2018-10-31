@@ -1,8 +1,9 @@
-HAVEN"T TOUCHED THIS YET!!!!
 <?php
-$income = $_POST['income'];
-$category = $_POST['category'];
-$expected_expense = $_POST['expected_expense'];
+$amount = $_POST['income'];
+$date = $_POST['category'];
+$category = $_POST['expected_expense'];
+$merchant = $_POST['merchant'];
+$note = $_POST['note'];
 
 try
 {
@@ -34,19 +35,21 @@ catch (PDOException $ex)
     </head>
     <body>
         <div class="center">
-        <h1 class="page_header">You added information</h1>
+        <h1 class="page_header">You added a transaction!</h1>
+        <button type="button" onclick="window.location.href='main.php'" id="tran_button">Go to Budget</button>
+        <button type="button" onclick="window.location.href='transactions.php'" id="tran_button">Go to Transactions</button>
         </div>
 
     <?php
 
-$stmt = $db->prepare('INSERT INTO budget(income, expected_expense, category) VALUES (:income, :expected_expense, :category);');
-$stmt->bindValue(':income', $income, PDO::PARAM_STR);
-$stmt->bindValue(':expected_expense', $expected_expense, PDO::PARAM_STR);
+$stmt = $db->prepare('INSERT INTO budget(amount, date, category, merchant, note) VALUES (:amount, :date, :category, :merchant, :note);');
+$stmt->bindValue(':amount', $amount, PDO::PARAM_STR);
+$stmt->bindValue(':date', $date, PDO::PARAM_STR);
 $stmt->bindValue(':category', $category, PDO::PARAM_STR);
+$stmt->bindValue(':merchant', $merchant, PDO::PARAM_STR);
+$stmt->bindValue(':note', $note, PDO::PARAM_STR);
 
 $stmt->execute();
 ?>
-        <button type="button" onclick="window.location.href='main.php'" id="tran_button">Go to Budget</button>
-        <button type="button" onclick="window.location.href='transactions.php'" id="tran_button">Go to Transactions</button>
     </body>
 </html>

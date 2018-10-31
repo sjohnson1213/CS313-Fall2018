@@ -33,7 +33,7 @@ catch (PDOException $ex)
     </head>
     <body>
         <div class="center">
-        <h1 class="page_header">You added information</h1>
+        <h1 class="page_header">You added a budget item!</h1>
         <button type="button" onclick="window.location.href='main.php'" id="tran_button">Go to Budget</button>
         <button type="button" onclick="window.location.href='transactions.php'" id="tran_button">Go to Transactions</button>
         </div>
