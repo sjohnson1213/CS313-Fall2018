@@ -1,4 +1,9 @@
 <?php
+$username = $_POST['username'];
+$password = $_POST['password'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -33,5 +38,16 @@ catch (PDOException $ex)
 
         <p>You're login information is:</p>
         </div>
+
+        <?php
+
+        $stmt = $db->prepare('INSERT INTO budget_user(username, password, name, email) VALUES (:username, :password, :name, :email);');
+        $stmt->bindValue(':username', $username, PDO::PARAM_STR);
+        $stmt->bindValue(':password', $password, PDO::PARAM_STR);
+        $stmt->bindValue(':name', $name, PDO::PARAM_STR);
+        $stmt->bindValue(':email', $email, PDO::PARAM_STR);
+
+        $stmt->execute();
+        ?>
     </body>
 </html>

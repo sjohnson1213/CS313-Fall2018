@@ -8,7 +8,7 @@ session_start();
         <link rel="stylesheet" type="text/css" href="mainstyle.css">
     </head>
     <body>
-    <form action="main.php">
+    <form action="regconfirm.php" method="POST">
         <div class="center">
             <h1 class="page_header">Let's Get You Registered!</h1>
             <label for="username"><b>Username</b></label>

@@ -32,6 +32,7 @@ catch (PDOException $ex)
         <link rel="stylesheet" type="text/css" href="mainstyle.css">
     </head>
     <body>
+        <button type="button" onclick="window.location.href='main.php'" id="tran_button">Back to Budget</button>
         <div class="center">
             <h1 class="page_header">Your Transactions</h1>
             <table id="tran_table" style="width:100%">
