@@ -34,6 +34,8 @@ catch (PDOException $ex)
     <body>
         <div class="center">
         <h1 class="page_header">You added information</h1>
+        <button type="button" onclick="window.location.href='main.php'" id="tran_button">Go to Budget</button>
+        <button type="button" onclick="window.location.href='transactions.php'" id="tran_button">Go to Transactions</button>
         </div>
 
     <?php
@@ -45,7 +47,5 @@ $stmt->bindValue(':category', $category, PDO::PARAM_STR);
 
 $stmt->execute();
 ?>
-        <button type="button" onclick="window.location.href='main.php'" id="tran_button">Go to Budget</button>
-        <button type="button" onclick="window.location.href='transactions.php'" id="tran_button">Go to Transactions</button>
     </body>
 </html>
