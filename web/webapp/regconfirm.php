@@ -36,7 +36,13 @@ catch (PDOException $ex)
         <div class="center">
         <h1 class="page_header">Congratulations! You're now registered!</h1>
 
-        <p>You're login information is:</p>
+        <p>The information you have entered is:</p>
+        <?php
+        echo $username + br; 
+        echo $password + br;
+        echo $name + br;
+        echo $email + br;
+        ?>
         </div>
 
         <?php
