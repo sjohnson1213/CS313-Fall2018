@@ -3,6 +3,7 @@ session_start();
 if (isset($_SESSION['username']) && isset($_SESSION['password'])){
     $_SESSION['username'] = $_POST['username'];
     $_SESSION['password'] = $_POST['password'];
+    $_SESSION['id'] = 0;
 }
 
 $username = $_SESSION['username'];
@@ -50,6 +51,7 @@ catch (PDOException $ex)
             foreach ($db->query("SELECT id FROM budget_user WHERE username='$username' AND password='$password'") as $row)
             {
                 $id=$row['id'];
+                $_SESSION['id'] = $id;
             }
 
             ?>

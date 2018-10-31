@@ -1,5 +1,6 @@
 <?php
 session_start();
+echo $_SESSION['id'];
 
 try
 {
@@ -23,10 +24,6 @@ catch (PDOException $ex)
   die();
 }
 
-foreach ($db->query("SELECT id FROM budget_user WHERE username='$username' AND password='$password'") as $row)
-{
-    $id=$row['id'];
-}
 ?>
 
 <html>
