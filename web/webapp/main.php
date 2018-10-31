@@ -9,9 +9,6 @@ if (isset($_SESSION['username']) && isset($_SESSION['password'])){
 $username = $_SESSION['username'];
 $password = $_SESSION['password'];
 $id = 0;
-$income = $_POST['income'];
-$category = $_POST['category'];
-$expected_expense = $_POST['expected_expense'];
 
 try
 {
@@ -94,15 +91,6 @@ catch (PDOException $ex)
             </table><br><br><br>
 
             <button type="button" onclick="window.location.href='add.php'" id="tran_button">Add Budget Item or Transaction</button>
-            <?php
-
-            $stmt = $db->prepare('INSERT INTO budget(income, expected_expense, category) VALUES (:income, :expected_expense, :category);');
-            $stmt->bindValue(':income', $income, PDO::PARAM_STR);
-            $stmt->bindValue(':expected_expense', $expected_expense, PDO::PARAM_STR);
-            $stmt->bindValue(':category', $category, PDO::PARAM_STR);
-
-            $stmt->execute();
-            ?>
         </div>
     </body>
 </html>

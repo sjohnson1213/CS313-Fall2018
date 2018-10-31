@@ -38,10 +38,10 @@ catch (PDOException $ex)
 
         <p>The information you have entered is:</p>
         <?php
-        echo $username + br; 
-        echo $password + br;
-        echo $name + br;
-        echo $email + br;
+        echo $username . "<br>"; 
+        echo $password . "<br>";
+        echo $name . "<br>";
+        echo $email . "<br>";
         ?>
         </div>
 
@@ -55,5 +55,6 @@ catch (PDOException $ex)
 
         $stmt->execute();
         ?>
+        <button type="button" onclick="window.location.href='main.php'" id="tran_button">Go to Budget</button>
     </body>
 </html>

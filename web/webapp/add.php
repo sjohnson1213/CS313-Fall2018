@@ -5,7 +5,7 @@ session_start();
 <html>
 <body>
 <h1>Enter Budget Information:</h1>
-<form action="main.php" method="POST">
+<form action="budgetaddconfirm.php" method="POST">
   <label for="income"><b>Income</b></label>
   <input type="text" placeholder="Enter Income" name="income"><br><br>
 
@@ -15,7 +15,7 @@ session_start();
   <label for="expected_expense"><b>Expected Expense</b></label>
   <input type="text" placeholder="Enter Expected Expense" name="lastname"><br><br>
 
-  <input type="submit">Add Budget Item</button>
+  <button type="submit">Add Budget Item</button>
 </form><br><br>
 
 <h1>Enter Transaction Information:</h1>
@@ -35,7 +35,7 @@ session_start();
   <label for="note"><b>Note</b></label>
   <input type="text" placeholder="Enter Note" name="note"><br><br>
 
-  <input type="submit">Add Transaction</button>
+  <button type="submit">Add Transaction</button>
 </form> 
 </body>
 </html>
