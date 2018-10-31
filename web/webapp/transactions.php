@@ -1,13 +1,5 @@
 <?php
 session_start();
-if (isset($_SESSION['username']) && isset($_SESSION['password'])){
-    $_SESSION['username'] = $_POST['username'];
-    $_SESSION['password'] = $_POST['password'];
-}
-
-$username = $_SESSION['username'];
-$password = $_SESSION['password'];
-$id = 0;
 
 try
 {
