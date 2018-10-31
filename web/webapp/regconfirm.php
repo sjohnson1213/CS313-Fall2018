@@ -55,6 +55,6 @@ catch (PDOException $ex)
 
         $stmt->execute();
         ?>
-        <button type="button" onclick="window.location.href='main.php'" id="tran_button">Go to Budget</button>
+        <button type="button" onclick="window.location.href='login.php'" id="tran_button">Login</button>
     </body>
 </html>
